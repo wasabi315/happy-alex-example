@@ -6,6 +6,7 @@ Example for combining happy and alex
 - Custom parser monad and type-safe errors
 - Use Lazy Text instead of String
 - Source location information is attached to tokens and AST
+- Nested comment parsing
 
 ## Quick Start
 ```sh
