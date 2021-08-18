@@ -10,7 +10,7 @@ Example for combining happy and alex
 
 ## Quick Start
 ```sh
-cabal run happy-alex-example
+cabal run happy-alex-example < expr.txt
 ```
 
 ## Reference
