@@ -1,0 +1,42 @@
+cabal-version:      2.4
+name:               happy-alex-example
+version:            0.1.0.0
+synopsis:
+
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             wasabi315
+maintainer:         wasabi.nvim.st@gmail.com
+copyright:          (c) 2021 Satoshi Takimoto
+
+category:           Language
+
+extra-source-files: CHANGELOG.md
+
+library
+    hs-source-dirs: src
+    build-depends:
+        base ^>=4.14.2.0,
+        array,
+        text,
+        utf8-string
+    build-tool-depends:
+        alex:alex,
+        happy:happy
+    exposed-modules:
+        Monad
+        Errors
+        SrcLoc
+        AST
+        Lexer
+        Parser
+    default-language: Haskell2010
+
+executable happy-alex-example
+    hs-source-dirs: app
+    main-is: Main.hs
+    build-depends:
+        base ^>=4.14.2.0,
+        text,
+        happy-alex-example
+    default-language: Haskell2010
